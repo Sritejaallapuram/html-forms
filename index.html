@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <form id="contactForm" class="form-card">
+            <h2>Contact Us</h2>
+
+            <div class="input-group">
+                <label>Full Name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+            </div>
+
+            <div class="input-group">
+                <label>Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email">
+            </div>
+
+            <div class="input-group">
+                <label>Gender</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender"> Male</label>
+                    <label><input type="radio" name="gender"> Female</label>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label>Skills</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox"> HTML</label>
+                    <label><input type="checkbox"> CSS</label>
+                    <label><input type="checkbox"> JavaScript</label>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label>Country</label>
+                <select>
+                    <option>Select Country</option>
+                    <option>India</option>
+                    <option>USA</option>
+                    <option>UK</option>
+                    <option>Canada</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label>Message</label>
+                <textarea id="message" rows="5" placeholder="Write your message"></textarea>
+            </div>
+
+            <button type="submit">Submit</button>
+
+            <p id="successMessage"></p>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
